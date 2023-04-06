@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: bisque;">
+
+    <h1 style="color: red; size: 50px; text-align: center;"> Enter Your Details</h1>
+
+    <form  action="{{url_for('predict')}}" method="post"  style="border: 3px solid rgb(0, 255, 8); text-align: center; padding: 10px;">
+        <label style="font-size: 20px; ">Select Your Gender</label> <br>
+        <select name="gender" id="gender">
+         <option value="1">Male</option>
+         <option value="0">Female</option>
+
+        </select> <br><br>
+
+        <label style="font-size: 20px;">Enter Your Age</label> <br>
+        <input type="text" style="border-radius: 5px;" name="age" id="age" placeholder="Enter Age"> <br> <br>
+
+        <label style="font-size: 20px;">Enter Your Salary</label> <br>
+        <input type="text" style="border-radius: 5px;" name="salary" id="slary" placeholder="Enter Salary"> <br> <br><br>
+
+        <input type="submit" style="font-size: 15px; border-radius: 5px; cursor: pointer;" name="submit" id="submit" value="SUBMIT">
+
+       
+    
+    </form>
+    <h1 style="font-size: 30px; text-align: center;">{{prediction_text}}</h1>
+</body>
+</html>

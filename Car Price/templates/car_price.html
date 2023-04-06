@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price</title>
+
+    <link rel="stylesheet" href="../static/css/carstyle.css">
+</head>
+<body>
+
+    <h1 id="main_head">CAR PRICE PREDICTION</h1>
+
+    <form action="{{url_for('predict')}}" method="post" id="form">
+        <label id="mileage">ENTER KILOMETERS DRIVEN</label>
+        <input type="text" name="mileage_input" id="mileage_input" placeholder="Enter mileage"> 
+
+        <label id="year">YEARS OLD</label>
+        <input type="text" name="years_input" id="years_input" placeholder="Enter years old">
+
+        <input type="submit" name="button" id="button" value="KNOW THE PRICE">
+
+
+    </form>
+
+    <h2 id="prediction">{{prediction}}</h2>
+
+
+    
+</body>
+</html>

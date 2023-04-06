@@ -1,0 +1,13 @@
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../image/laptop\ image.jpg");
+    
+}
+
+#main_head{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+

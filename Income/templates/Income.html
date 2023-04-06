@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Income/static/css/income_style.css">
+</head>
+<body id="bg_image" style="background-size: cover;
+background-repeat: no-repeat;" background="../static/image/business-proposal-purchase-hands-holding-money.jpg">
+
+    <h1 id="heading" style="font-size: 70px;
+    text-align: center;
+    margin-top: 130px;
+    ">KNOW YOUR INCOME</h1>
+
+    <form style="text-align: center;" id="form" action="{{url_for('predict')}}" method="post">
+        <label id="age_label" style=" font-size: 30px;">ENTER YOUR AGE</label> <br><br>
+        <input type="text" name="age" id="age" placeholder="Enter Your Age" style="border-radius: 5px;"><br><br>
+        <input type="button" name="submit" id="submit" Value="SUBMIT">
+
+    </form>
+
+    <h2 id="prediction" style="text-align: center;
+    font-size: 40px;">{{prediction}}</h2>
+    
+</body>
+</html>

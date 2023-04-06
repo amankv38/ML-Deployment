@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Job Prediction</title>
+
+    <link rel="stylesheet" href="../static/css/fake._job.css">
+</head>
+<body id="bg">
+    <h1 id="main_head">FAKE JOB PREDICTION</h1>
+
+    <form action="{{url_for('predict')}}" method="post" id="form">
+
+<!-- TITLE -->
+        <label id="title_head">SELECT THE TITLE</label>
+        <select name="title" id="title">
+            <option value="0">Accounting Clerk</option>
+            <option value="1">Application Developer</option>
+            <option value="2">BI Developer</option>
+            <option value="3">Bill Review Manager</option>
+            <option value="4">Junior HR Marketing Manager</option>
+            <option value="5">Lead Guest Service Specialist</option>
+            <option value="6">Marketing Intern</option>
+            <option value="7">Project Manager</option>
+            <option value="8">Software Application Specialist</option>
+            <option value="9">Talent Management Process Manager</option>
+            <option value="10">Visual Designer</option>
+        </select> <br> <br>
+
+<!-- LOCATION -->
+        <label id="location_head">SELECT LOCATION</label>
+        <select name="location" id="location">
+            <option value="0">Andhra</option>
+            <option value="1">Arunachal Pradesh</option>
+            <option value="2">Assam</option>
+            <option value="3">Bihar</option>
+            <option value="4">Chattisgarh</option>
+            <option value="5">Goa</option>
+            <option value="6">Gujarat</option>
+            <option value="7">Karnataka</option>
+            <option value="8">Kerala</option>
+            <option value="9">Madhya Pradesh</option>
+            <option value="10">Maharastra</option>
+            <option value="11">Manipur</option>
+            <option value="12">Mizoram</option>
+            <option value="13">Orissa</option>
+            <option value="14">Punjab</option>
+            <option value="15">Rajasthan</option>
+            <option value="16">Tamil Nadu</option>
+            <option value="17">Telengana</option>
+            <option value="18">Uttar Pradesh</option>
+            <option value="19">West Bengal</option>
+        </select> <br><br>
+
+<!-- DEPARTMENT -->
+        <label id="department_head">SELECT DEPARTMENT</label>
+        <select name="department" id="department">
+            <option value="0">Andriod pit</option>
+            <option value="1">Business Development</option>
+            <option value="2">Financial</option>
+            <option value="3">Marketplace</option>
+            <option value="4">Oil And Energy</option>
+            <option value="5">Playfair Capital</option>
+            <option value="6">Production</option>
+            <option value="7">Sales</option>
+            <option value="8">Sales And Business Development</option>
+            <option value="9">Software Development</option>
+        </select> <br><br>
+
+<!-- SALARY_RANGE -->
+        <label id="salary_range">ENTER THE SALARY MENTIONED</label>
+        <input type="text" name="salary_range" placeholder="Enter the mentioned salary">  <br><br>
+
+<!-- COMPANY PROFILE       -->
+        <label id="company_profile_head"> COMPANY PROFILE PROVIDED ?</label>
+        <select name="company_profile" id="company_profile">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+
+<!-- DESCRIPTION -->
+        <label id="description_head"> COMPANY DESCRIPTION PROVIDED ?</label>
+        <select name="description" id="description">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+        
+<!-- REQUIREMENTS -->
+        <label id="company_profile_head"> COMPANY REQUIREMENTS PROVIDED ?</label>
+        <select name="requirements" id="requirements">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+
+<!-- BENIFITS -->
+        <label id="benifits_head"> COMPANY BENIFITS PROVIDED ?</label>
+        <select name="benifits" id="benifits">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+
+<!-- TELECOMMUTING         -->
+        <label id="telecommuting_head"> COMPANY COMMUNICATION DETAILS PROVIDED ?</label>
+        <select name="telecommuting" id="telecommuting">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+
+<!-- COMPANY LOGO -->
+        <label id="company_logo_head"> COMPANY LOGO PROVIDED ?</label>
+        <select name="company_logo" id="company_logo">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+
+<!-- QUESTIONS -->
+        <label id="questions_head"> COMPANY QUESTIONS PROVIDED ?</label>
+        <select name="questions" id="questions">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br><br>
+
+<!-- EMPLOYEMENT TYPE -->
+        <label id="employement_head">SELECT EMPLOYEMENT TYPE</label>
+        <select name="employement" id="employement">
+            <option value="0">Contract</option>
+            <option value="1">Full Time</option>
+            <option value="2">Other</option>
+            <option value="3">Part Time</option>
+            <option value="4">Temporary</option>
+        </select> <br><br>
+
+<!-- REQUIRED EXPERIENCE -->
+        <label id="required_experince_head">SELECT REQUIRED EXPERINCE</label>
+        <select name="required_experince" id="required_experince">
+            <option value="0">Associate</option>
+            <option value="1">Director</option>
+            <option value="2">Entry Lvel</option>
+            <option value="3">Executive</option>
+            <option value="4">Internship</option>
+            <option value="5">Mid-Senior Level</option>
+            <option value="6">Not Applicable</option>
+        </select> <br><br>
+
+<!-- REQUIRED EDUCATION -->
+        <label id="required_education_head">SELECT REQUIRED EDUCATION</label>
+        <select name="required_education" id="required_education">
+            <option value="0">Associate Degree</option>
+            <option value="1">Bachelor's Degree</option>
+            <option value="2">Certification</option>
+            <option value="3">Doctorate</option>
+            <option value="4">High School or Equivalent</option>
+            <option value="5">Master's Degree</option>
+            <option value="6">Professional</option>
+            <option value="7">Some College Course Work Completed</option>
+            <option value="8">Unspecified</option>
+            <option value="9">Vocational</option>
+        </select>   <br> <br>
+        
+<!-- INDUSTRY       -->
+        <label id="industry_head">SELECT INDUSTRY</label>
+        <select name="industry" id="industry">
+            <option value="0">Computer Software</option>
+            <option value="1">Construction</option>
+            <option value="2">Consumer Electronics</option>
+            <option value="3">Consumer Services</option>
+            <option value="4">Education Management</option>
+            <option value="5">Events Services</option>
+            <option value="6">Facilities Services</option>
+            <option value="7">Financial Services</option>
+            <option value="8">Hospital And Healthcare</option>
+            <option value="9">Information Technology And Services</option>
+            <option value="10">Internet</option>
+            <option value="11">Management Consulting</option>
+            <option value="12">Marketing And Advertising</option>
+            <option value="13">Oil And Energy</option>
+            <option value="14">Online Media</option>
+            <option value="15">Telecommunication</option>
+        </select> <br> <br>
+
+<!-- FUNCTION -->
+        <label id="function_head">SELECT FUNCTION</label>
+        <select name="function" id="function">
+            <option value="0">Administrative</option>
+            <option value="1">Customer Service</option>
+            <option value="2">Design</option>
+            <option value="3">Education</option>
+            <option value="4">Engineering</option>
+            <option value="5">Health Care Provider</option>
+            <option value="6">Information Technology</option>
+            <option value="7">Management</option>
+            <option value="8">Marketing</option>
+            <option value="9">Production</option>
+            <option value="10">Sales</option>
+            <option value="11">Supplychain</option>
+        </select> <br> <br>
+
+
+
+<!-- BUTTON -->
+        <input type="submit" name="submit" id="submit" value="SUBMIT">
+
+
+    </form>
+
+    <nav id="prediction">{{prediction}}</nav>
+    
+</body>
+</html>

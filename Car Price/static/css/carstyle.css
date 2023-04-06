@@ -1,0 +1,27 @@
+body{
+    background-image: url("../image/car\ image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#main_head{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+#form{
+    color: white;
+    float: flex;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+
+
+}
+
+#prediction{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}

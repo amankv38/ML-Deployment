@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    
+</head>
+
+<body style="background-size: cover; background-repeat: no-repeat;" id="image" background="../static/images/kyphosis bg.jpg" >
+
+    <div id="div">
+
+        <p style="font-size: 90px;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        text-align: center;" id="heading"> KYPHOSIS</p>
+
+        <form style="text-align: center;
+        font-size: 20px;" action="{{url_for('predict')}}" method="post" class="form">
+
+            <label style="font-size: 40px;" id="enter_age">Enter Your Age</label> <br> <br>
+            <input style="border-radius: 5px;" type="text" name="age" id="age"> <br><br>
+
+            <input style=" background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 20px;" type="button" name="submit" id="submit" value="SUBMIT">
+        </form>
+
+        <h2 style="text-align: center;
+        color: rgb(255, 0, 0);
+        font-style: bolder;" id="prediction">{{prediction}}</h2>
+
+
+    </div>
+
+
+    
+</body>
+</html>
